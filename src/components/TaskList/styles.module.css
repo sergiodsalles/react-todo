@@ -1,0 +1,134 @@
+.taskListContainer {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.taskFormContainer {
+  max-width: 46rem;
+  display: flex;
+  gap: 0.5rem;
+  margin-top: -1.57rem;
+}
+
+.taskFormContainer input {
+  background: var(--gray-500);
+  border: 0;
+  border-radius: 8px;
+  flex: 1;
+  padding: 1rem;
+  color: var(--gray-300);
+}
+
+.taskFormContainer input:focus {
+  outline: 1px solid var(--blue);
+}
+
+.taskFormContainer button[type="submit"] {
+  background: var(--blue-dark);
+  color: var(--white);
+  border: 0;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.taskList {
+  margin-top: 4rem;
+}
+
+.taskList header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  gap: 0.5rem;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+
+.totalTasks {
+  color: var(--blue);
+}
+
+.doneTasks {
+  color: var(--purple);
+}
+
+.countBadge {
+  background: var(--gray-400);
+  color: var(--white);
+  padding: 0.125rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 9999px;
+}
+
+.noTasksContainer {
+  padding: 4rem 1.5rem;
+  color: var(--gray-300);
+  text-align: center;
+  border-top: 1px solid var(--gray-400);
+}
+
+.taskList ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.taskList ul li {
+  border: 1px solid var(--gray-400);
+  background: var(--gray-500);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.taskList ul li.task {
+  color: var(--gray-100);
+}
+
+.taskList ul li.taskCompleted {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.taskList ul li div {
+  display: flex;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.taskList ul li svg {
+  color: var(--gray-300);
+  cursor: pointer;
+}
+
+.taskList ul li div label {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+
+  width: 1.5rem;
+  height: 1.5rem;
+  background: transparent;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background: var(--purple-dark);
+  border-color: var(--purple-dark);
+  background-image: url("../../assets/checked-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1rem;
+}
