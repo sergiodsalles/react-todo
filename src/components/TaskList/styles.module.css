@@ -81,9 +81,14 @@
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem;
   font-size: 0.875rem;
   line-height: 1.6;
+  transition: all 0.2s;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .taskList ul li.task {
@@ -115,12 +120,10 @@
 
 input[type="checkbox"] {
   appearance: none;
-
   width: 1.5rem;
-  height: 1.5rem;
+  border-radius: 50%;
   background: transparent;
   border: 2px solid var(--blue);
-  border-radius: 50%;
   cursor: pointer;
 }
 

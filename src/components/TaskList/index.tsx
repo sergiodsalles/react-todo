@@ -78,7 +78,7 @@ export const TaskList = () => {
           </div>
         </header>
 
-        {taskList ? (
+        {taskList && taskList.length > 0 ? (
           <ul>
             {taskList.map((task) => (
               <li
